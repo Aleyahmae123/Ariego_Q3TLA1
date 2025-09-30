@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffe6f2;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 600px;
+      margin: 40px auto;
+      background: #fff0f5;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #d63384;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+      color: #b30059;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ff99cc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #d63384;
+      box-shadow: 0 0 5px #ff66b2;
+    }
+
+    .gender-options {
+      margin-top: 8px;
+    }
+
+    .gender-options label {
+      display: inline;
+      margin-right: 10px;
+      font-weight: normal;
+    }
+
+    input[type="radio"] {
+      width: auto;
+      margin-right: 6px;
+    }
+
+    input[type="submit"] {
+      background: #ff4da6;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: #e60073;
+
+
+
+
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>💖 Registration Form 💖</h2>
+    <form action="output.html" method="get" enctype="multipart/form-data">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" maxlength="64" required>
+
+      <label for="mname">Middle Name:</label>
+      <input type="text" id="mname" name="mname" maxlength="64">
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" maxlength="64" required>
+
+      <label for="photo">Photo:</label>
+      <input type="file" id="photo" name="photo" accept="image/*">
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="birthloc">Birth Location:</label>
+      <input type="text" id="birthloc" name="birthloc" maxlength="64">
+
+      <label>Sex/Gender:</label>
+      <div class="gender-options">
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+      </div>
+
+      <label for="civil">Civil Status:</label>
+      <select id="civil" name="civil" required>
+        <option value="Single">Single</option>
+        <option value="Married">Married</option>
+        <option value="Divorced">Divorced</option>
+      </select>
+
+      <label for="nationality">Nationality:</label>
+      <input type="text" id="nationality" name="nationality" maxlength="64">
+
+      <label for="religion">Religion:</label>
+      <input type="text" id="religion" name="religion" maxlength="64">
+
+      <label for="contact">Contact Number:</label>
+      <input type="text" id="contact" name="contact" maxlength="20">
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="address">Home Address:</label>
+      <textarea id="address" name="address" rows="3"></textarea>
+
+      <label for="emergency">Emergency Contact (Name, Relationship):</label>
+      <input type="text" id="emergency" name="emergency" maxlength="64">
+
+      <label for="emergencyNum">Emergency Contact Number:</label>
+      <input type="text" id="emergencyNum" name="emergencyNum" maxlength="20">
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" maxlength="64" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" maxlength="64" required>
+
+      <label for="confirmpw">Confirm Password:</label>
+      <input type="password" id="confirmpw" name="confirmpw" maxlength="64" required>
+
+      <input type="submit" value="💌 Submit">
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
